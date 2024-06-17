@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <br>
+
+    <div class="card bg-primary text-white">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <div class="col-sm text-center">
+                    <h1 class="card-title">Concert Venues in Southwest Florida!</h1>
+                    <h5 class="card-subtitle mb-2 text-muted">Please write down the date, time, concert,
+                        concert venue and provide the venue's website.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!--This is where you fill in the concert details and click "Add" to insert a new row in the table.-->
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="concert-date">Concert Date</label>
+                        <input type="date" class="form-control" id="concert-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" class="form-control" id="concert-date-time">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="col-sm">
+                        <div class="form-group">
+                            <label for="concert">Concert</label>
+                            <input type="text" class="form-control" id="concert" placeholder="concert">
+                        </div>
+                        <div class="col-sm">
+                            <div class="form-group">
+                                <label for="concert-venue">Concert Venue</label>
+                                <input type="text" class="form-control" id="concert-venue" placeholder="venue">
+                            </div>
+                            <div class="col-sm">
+                                <div class="form-group">
+                                    <label for="venue-website">Venue's Website</label>
+                                    <input type="url" class="form-control" id="venue-website"
+                                        placeholder="url">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <button id="create" class="btn btn-primary from-control">Create</button>
+                </div>
+            </div>
+        </div>
+        <table id="list" class="table table-success table stripe table-hover"><!--This is where the concert details will be displayed.-->
+            <tr>
+                <th>Concert</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Venue</th>
+                <th>Website</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+
+
+        <script src="codingwk10.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
